@@ -1,0 +1,140 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'app_colors.dart';
+
+abstract final class AppTheme {
+  static ThemeData get light {
+    GoogleFonts.config.allowRuntimeFetching = false;
+    return ThemeData(
+      brightness: Brightness.light,
+      useMaterial3: true,
+      colorScheme: ColorScheme.light(
+        primary: Colors.grey.shade700,
+        secondary: Colors.orange.shade700,
+      ),
+      textTheme: _textTheme,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: false,
+      ),
+    );
+  }
+
+
+  static ThemeData get dark {
+    GoogleFonts.config.allowRuntimeFetching = false;
+    return ThemeData(
+      brightness: Brightness.dark,
+      scaffoldBackgroundColor: AppColors.background,
+      colorScheme: const ColorScheme.dark(
+        primary: AppColors.primary,
+        onPrimary: AppColors.onPrimary,
+        primaryContainer: AppColors.primaryContainer,
+        secondary: AppColors.secondary,
+        onSecondary: AppColors.onSecondary,
+        tertiary: AppColors.tertiary,
+        error: AppColors.error,
+        errorContainer: AppColors.errorContainer,
+        surface: AppColors.surface,
+        onSurface: AppColors.onSurface,
+        surfaceContainerHighest: AppColors.surfaceContainerHighest,
+        outline: AppColors.outline,
+        outlineVariant: AppColors.outlineVariant,
+      ),
+      textTheme: _textTheme,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        centerTitle: false,
+      ),
+      dialogTheme: const DialogThemeData(
+        backgroundColor: AppColors.surfaceContainer,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(16)),
+        ),
+      ),
+      switchTheme: SwitchThemeData(
+        thumbColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
+            return AppColors.primaryContainer;
+          }
+          return AppColors.outline;
+        }),
+        trackColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
+            return AppColors.primary.withValues(alpha: 0.3);
+          }
+          return AppColors.surfaceContainerHigh;
+        }),
+      ),
+      useMaterial3: true,
+    );
+  }
+
+  static TextTheme get _textTheme {
+    return TextTheme(
+      displayLarge: GoogleFonts.spaceGrotesk(
+        fontSize: 48,
+        fontWeight: FontWeight.w800,
+        color: AppColors.onSurface,
+        letterSpacing: 4,
+      ),
+      headlineLarge: GoogleFonts.spaceGrotesk(
+        fontSize: 32,
+        fontWeight: FontWeight.w700,
+        color: AppColors.onSurface,
+        letterSpacing: 2,
+      ),
+      headlineMedium: GoogleFonts.spaceGrotesk(
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+        color: AppColors.onSurface,
+      ),
+      titleLarge: GoogleFonts.spaceGrotesk(
+        fontSize: 20,
+        fontWeight: FontWeight.w600,
+        color: AppColors.onSurface,
+        letterSpacing: 2,
+      ),
+      titleMedium: GoogleFonts.spaceGrotesk(
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+        color: AppColors.onSurface,
+      ),
+      bodyLarge: GoogleFonts.manrope(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        color: AppColors.onSurface,
+      ),
+      bodyMedium: GoogleFonts.manrope(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        color: AppColors.onSurfaceVariant,
+      ),
+      bodySmall: GoogleFonts.manrope(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        color: AppColors.onSurfaceVariant,
+      ),
+      labelLarge: GoogleFonts.spaceGrotesk(
+        fontSize: 14,
+        fontWeight: FontWeight.w600,
+        color: AppColors.onSurface,
+        letterSpacing: 1.5,
+      ),
+      labelMedium: GoogleFonts.spaceGrotesk(
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+        color: AppColors.onSurfaceVariant,
+        letterSpacing: 1.5,
+      ),
+      labelSmall: GoogleFonts.spaceGrotesk(
+        fontSize: 10,
+        fontWeight: FontWeight.w500,
+        color: AppColors.onSurfaceVariant,
+        letterSpacing: 2,
+      ),
+    );
+  }
+}

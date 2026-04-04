@@ -1,0 +1,43 @@
+name: pinball_bounce
+description: "Pinball Bounce - Neon arcade pinball with procedural tables"
+publish_to: 'none'
+version: 1.0.1+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  shared_preferences: ^2.3.3
+  google_mobile_ads: ^5.2.0
+  in_app_purchase: ^3.2.1
+  google_fonts: ^6.2.1
+  audioplayers: ^6.1.0
+  app_tracking_transparency: ^2.0.6
+  intl: any
+  equatable: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/
+    - assets/audio/
+    - assets/audio/sfx/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#9E9E9E"
+  adaptive_icon_foreground: "assets/icon/icon.png"
