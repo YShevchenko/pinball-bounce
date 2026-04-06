@@ -19,13 +19,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get shop => 'Tienda';
 
   @override
-  String get score => 'Puntuacion';
+  String get score => 'Puntuación';
 
   @override
-  String get highScore => 'Mejor puntuacion';
+  String get highScore => 'Mejor puntuación';
 
   @override
-  String get totalScore => 'Puntuacion total';
+  String get totalScore => 'Puntuación total';
 
   @override
   String get level => 'Nivel';
@@ -37,7 +37,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get gameOver => 'Fin del juego';
 
   @override
-  String get levelComplete => 'Nivel completado!';
+  String get levelComplete => '¡Nivel completado!';
 
   @override
   String get nextLevel => 'Siguiente nivel';
@@ -46,7 +46,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get retry => 'Reintentar';
 
   @override
-  String get mainMenu => 'Menu';
+  String get mainMenu => 'Menú';
 
   @override
   String get newGame => 'Nuevo juego';
@@ -84,7 +84,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get soundEffects => 'Efectos de sonido';
 
   @override
-  String get hapticFeedback => 'Vibracion';
+  String get hapticFeedback => 'Vibración';
 
   @override
   String get language => 'Idioma';
@@ -105,7 +105,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get combo => 'Combo';
 
   @override
-  String get ballLost => 'Bola perdida!';
+  String get ballLost => '¡Bola perdida!';
 
   @override
   String get tapToContinue => 'Toca para continuar';

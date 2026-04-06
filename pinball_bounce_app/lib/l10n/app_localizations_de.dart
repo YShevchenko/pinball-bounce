@@ -40,13 +40,13 @@ class AppLocalizationsDe extends AppLocalizations {
   String get levelComplete => 'Level geschafft!';
 
   @override
-  String get nextLevel => 'Naechstes Level';
+  String get nextLevel => 'Nächstes Level';
 
   @override
   String get retry => 'Nochmal';
 
   @override
-  String get mainMenu => 'Menue';
+  String get mainMenu => 'Menü';
 
   @override
   String get newGame => 'Neues Spiel';
@@ -68,7 +68,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get removeAdsDescription =>
-      'Alle Interstitial-Werbung entfernen. Belohnungsvideos bleiben verfuegbar.';
+      'Alle Interstitial-Werbung entfernen. Belohnungsvideos bleiben verfügbar.';
 
   @override
   String get extraLives => 'Extra-Leben';
@@ -78,7 +78,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Starte jedes Spiel mit 5 Leben statt 3.';
 
   @override
-  String get restore => 'Kaeufe wiederherstellen';
+  String get restore => 'Käufe wiederherstellen';
 
   @override
   String get soundEffects => 'Soundeffekte';
@@ -93,7 +93,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get preferences => 'Einstellungen';
 
   @override
-  String get purchases => 'Kaeufe';
+  String get purchases => 'Käufe';
 
   @override
   String get store => 'Shop';

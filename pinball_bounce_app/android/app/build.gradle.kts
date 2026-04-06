@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.heldiglab.pinball_bounce"
+    namespace = "com.heldiglab.pinballbounce"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.heldiglab.pinball_bounce"
+        applicationId = "com.heldiglab.pinballbounce"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

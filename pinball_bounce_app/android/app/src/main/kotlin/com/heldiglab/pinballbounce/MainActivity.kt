@@ -1,4 +1,4 @@
-package com.heldiglab.pinball_bounce
+package com.heldiglab.pinballbounce
 
 import io.flutter.embedding.android.FlutterActivity
 

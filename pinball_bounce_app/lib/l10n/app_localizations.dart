@@ -8,7 +8,11 @@ import 'package:intl/intl.dart' as intl;
 import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
 import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
 import 'app_localizations_uk.dart';
+import 'app_localizations_ar.dart';
+import 'app_localizations_ja.dart';
+import 'app_localizations_ko.dart';
 
 // ignore_for_file: type=lint
 
@@ -36,8 +40,12 @@ abstract class AppLocalizations {
   static const List<Locale> supportedLocales = <Locale>[
     Locale('de'),
     Locale('en'),
+    Locale('fr'),
     Locale('es'),
     Locale('uk'),
+      Locale('ar'),
+      Locale('ja'),
+      Locale('ko'),
   ];
 
   String get appTitle;
@@ -87,7 +95,7 @@ class _AppLocalizationsDelegate
 
   @override
   bool isSupported(Locale locale) =>
-      <String>['de', 'en', 'es', 'uk'].contains(locale.languageCode);
+      <String>['ar', 'de', 'en', 'es', 'fr', 'ja', 'ko', 'uk'].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -101,8 +109,16 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
       return AppLocalizationsEn();
     case 'es':
       return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
     case 'uk':
       return AppLocalizationsUk();
+    case 'ar':
+      return AppLocalizationsAr();
+    case 'ja':
+      return AppLocalizationsJa();
+    case 'ko':
+      return AppLocalizationsKo();
   }
 
   throw FlutterError(

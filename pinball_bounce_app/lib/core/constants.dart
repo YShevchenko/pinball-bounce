@@ -22,7 +22,7 @@ abstract final class GameConstants {
   static const double restitution = 0.7;
 
   /// Extra energy multiplier when hitting a bumper.
-  static const double bumperBoost = 1.3;
+  static const double bumperBoost = 1.6;
 
   /// Starting number of lives per game.
   static const int startLives = 3;
@@ -40,7 +40,7 @@ abstract final class GameConstants {
   static const double flipperAngularSpeed = 15.0;
 
   /// Force applied to ball when hit by a moving flipper.
-  static const double flipperHitForce = 600.0;
+  static const double flipperHitForce = 1200.0;
 
   /// Score for hitting a bumper.
   static const int bumperHitScore = 10;

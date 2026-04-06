@@ -10,103 +10,103 @@ class AppLocalizationsUk extends AppLocalizations {
   String get appTitle => 'Pinball Bounce';
 
   @override
-  String get play => 'Graty';
+  String get play => 'Грати';
 
   @override
-  String get settings => 'Nalashtuvannia';
+  String get settings => 'Налаштування';
 
   @override
-  String get shop => 'Kramnytsia';
+  String get shop => 'Крамниця';
 
   @override
-  String get score => 'Baly';
+  String get score => 'Бали';
 
   @override
-  String get highScore => 'Rekord';
+  String get highScore => 'Рекорд';
 
   @override
-  String get totalScore => 'Zahalni baly';
+  String get totalScore => 'Загальні бали';
 
   @override
-  String get level => 'Riven';
+  String get level => 'Рівень';
 
   @override
-  String get lives => 'Zhyttia';
+  String get lives => 'Життя';
 
   @override
-  String get gameOver => 'Hra zakinchena';
+  String get gameOver => 'Гра закінчена';
 
   @override
-  String get levelComplete => 'Riven proydeno!';
+  String get levelComplete => 'Рівень пройдено!';
 
   @override
-  String get nextLevel => 'Nastupnyi riven';
+  String get nextLevel => 'Наступний рівень';
 
   @override
-  String get retry => 'Sprobuvaty znovu';
+  String get retry => 'Спробувати знову';
 
   @override
-  String get mainMenu => 'Meniu';
+  String get mainMenu => 'Меню';
 
   @override
-  String get newGame => 'Nova hra';
+  String get newGame => 'Нова гра';
 
   @override
-  String get tapToLaunch => 'Torknit shchob zapustyty';
+  String get tapToLaunch => 'Торкніться, щоб запустити';
 
   @override
-  String get gamesPlayed => 'Ihor zihrano';
+  String get gamesPlayed => 'Ігор зіграно';
 
   @override
-  String get targetsCleared => 'Tsilei vrazeno';
+  String get targetsCleared => 'Цілей вражено';
 
   @override
-  String get bumperHits => 'Udariv ob bamper';
+  String get bumperHits => 'Ударів об бампер';
 
   @override
-  String get removeAds => 'Vydalyty reklamu';
+  String get removeAds => 'Видалити рекламу';
 
   @override
   String get removeAdsDescription =>
-      'Vydalyty vsiu mizhstorinkov reklamu. Nahorodzhuvalni video zalyshaiutsia dostupnymy.';
+      'Видалити всю міжсторінкову рекламу. Нагороджувальні відео залишаються доступними.';
 
   @override
-  String get extraLives => 'Dodatkovi zhyttia';
+  String get extraLives => 'Додаткові життя';
 
   @override
   String get extraLivesDescription =>
-      'Pochynaty kozhnu hru z 5 zhyttiamy zamist 3.';
+      'Починати кожну гру з 5 життями замість 3.';
 
   @override
-  String get restore => 'Vidnovyty pokupky';
+  String get restore => 'Відновити покупки';
 
   @override
-  String get soundEffects => 'Zvukovi efekty';
+  String get soundEffects => 'Звукові ефекти';
 
   @override
-  String get hapticFeedback => 'Haptychnyi zvorotnii zviazok';
+  String get hapticFeedback => 'Гаптичний зворотний зв\'язок';
 
   @override
-  String get language => 'Mova';
+  String get language => 'Мова';
 
   @override
-  String get preferences => 'Nalashtuvannia';
+  String get preferences => 'Налаштування';
 
   @override
-  String get purchases => 'Pokupky';
+  String get purchases => 'Покупки';
 
   @override
-  String get store => 'Kramnytsia';
+  String get store => 'Крамниця';
 
   @override
-  String get purchased => 'Kuplieno';
+  String get purchased => 'Куплено';
 
   @override
-  String get combo => 'Kombo';
+  String get combo => 'Комбо';
 
   @override
-  String get ballLost => 'Miacha vtracheno!';
+  String get ballLost => 'М\'яча втрачено!';
 
   @override
-  String get tapToContinue => 'Torknit shchob prodovzhyty';
+  String get tapToContinue => 'Торкніться, щоб продовжити';
 }
